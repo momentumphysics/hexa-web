@@ -43,15 +43,15 @@ export default function ProductCatalog() {
         },
         {
             id: 3,
-            name: 'Edelweiss (2 Lantai)',
+            name: 'Edelweiss Type 112',
             image: '/img/Edelweiss/Edelweiss depan.webp',
             hoverImage: '/img/Edelweiss/Edelweiss dalam.webp',
             videoLink: 'https://vt.tiktok.com/ZS5KoDYeo/',
             specs: {
-                luas: 'LT 9x15m',
-                bedrooms: '3 Kamar (1 Bawah, 2 Atas)',
-                bathrooms: '3 Kamar (1 Bawah, 2 Atas)',
-                garage: 'Carport Mobil',
+                luas: 'LT 9x15 | LB 112 m²',
+                bedrooms: '3 Kamar Mandi',
+                bathrooms: '3 Kamar Tidur',
+                garage: 'Garasi Luas',
             },
             features: ['Taman Depan & Belakang', 'Tanah Sangat Luas', 'Premium Design'],
             pricing: null // Special case

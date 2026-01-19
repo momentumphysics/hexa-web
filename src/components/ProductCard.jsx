@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ImageModal from './ImageModal';
 
+
 export default function ProductCard({ product }) {
   const [isHovered, setIsHovered] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);

@@ -5,7 +5,14 @@ export default function Hero() {
         e.preventDefault();
         const element = document.querySelector(targetId);
         if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
+            const navHeight = 80;
+            const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+            const offsetPosition = elementPosition - navHeight;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
         }
     };
 
@@ -24,7 +31,7 @@ export default function Hero() {
             <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8 text-center sm:text-left">
                 <h1 className="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl max-w-3xl" data-aos="fade-up">
                     <span className="block xl:inline">Hexa: Hunian Impian</span>{' '}
-                    <span className="block text-accent xl:inline">di Lokasi Strategis Makassar & Gowa.</span>
+                    <span className="block text-accent xl:inline">di Lokasi Strategis Makassar & Gowa</span>
                 </h1>
                 <p className="mt-6 text-xl text-gray-300 max-w-2xl" data-aos="fade-up" data-aos-delay="200">
                     Rumah luas, cicilan fleksibel, DP ringan! Unit terbatas. Temukan kenyamanan hidup di lingkungan terbaik.

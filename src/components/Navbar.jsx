@@ -1,7 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
+    const [isVisible, setIsVisible] = useState(true);
+    const lastScrollY = useRef(0);
+
+    const controlNavbar = () => {
+        if (typeof window !== 'undefined') {
+            if (window.scrollY > lastScrollY.current && window.scrollY > 100) { // scrolling down
+                setIsVisible(false);
+            } else { // scrolling up
+                setIsVisible(true);
+            }
+            lastScrollY.current = window.scrollY;
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', controlNavbar);
+        return () => window.removeEventListener('scroll', controlNavbar);
+    }, []);
 
     const handleScroll = (e, targetId) => {
         e.preventDefault();
@@ -11,14 +29,21 @@ export default function Navbar() {
         } else {
             const element = document.querySelector(targetId);
             if (element) {
-                element.scrollIntoView({ behavior: 'smooth' });
+                const navHeight = 80; // height of navbar
+                const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+                const offsetPosition = elementPosition - navHeight;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
             }
         }
         setIsOpen(false);
     };
 
     return (
-        <nav className="bg-white shadow-sm sticky top-0 z-50">
+        <nav className={`bg-white shadow-sm fixed top-0 w-full z-50 transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between h-20">
                     <div className="flex-shrink-0 flex items-center">
