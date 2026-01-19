@@ -29,12 +29,7 @@ export default function Navbar() {
         } else {
             const element = document.querySelector(targetId);
             if (element) {
-                const navHeight = 80; // height of navbar
-                const elementPosition = element.getBoundingClientRect().top + window.scrollY;
-                const offsetPosition = elementPosition - navHeight;
-
-                window.scrollTo({
-                    top: offsetPosition,
+                element.scrollIntoView({
                     behavior: 'smooth'
                 });
             }
