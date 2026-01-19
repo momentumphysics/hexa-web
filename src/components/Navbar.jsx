@@ -46,7 +46,7 @@ export default function Navbar() {
                         <a href="#" onClick={(e) => handleScroll(e, '#')} className="cursor-pointer">
                             <img
                                 className="h-12 w-auto"
-                                src="/img/Logo header.webp"
+                                src="/img/Logo header.avif"
                                 alt="Hexa Real Estate"
                             />
                         </a>

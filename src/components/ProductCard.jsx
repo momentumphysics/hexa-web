@@ -106,7 +106,7 @@ export default function ProductCard({ product }) {
       <ImageModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
-        images={[product.image, product.hoverImage].filter(Boolean)} // Pass both images
+        images={product.images || [product.image, product.hoverImage].filter(Boolean)} // Pass all images
         alt={product.name}
       />
     </>

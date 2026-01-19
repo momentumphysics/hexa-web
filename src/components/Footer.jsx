@@ -11,11 +11,11 @@ export default function Footer() {
                     <div data-aos="fade-up">
                         <div className="flex items-center mb-4">
                             <img
-                                className="h-10 w-auto"
-                                src="/img/Logo header.webp"
+                                className="h-7 w-auto"
+                                src="/img/Logo header.avif"
                                 alt="Hexa Logo"
                             />
-                            <span className="ml-3 text-xl font-bold text-gray-900">Hexa Property</span>
+                            <span className="ml-2 text-xl font-bold text-gray-900">Property</span>
                         </div>
                         <p className="text-gray-500 text-sm">
                             Mewujudkan hunian impian dengan kualitas terbaik dan lokasi strategis di Makassar & Gowa.
@@ -38,6 +38,25 @@ export default function Footer() {
                                 Sulsel 90235
                             </p>
                         </div>
+                        
+
+                        <a
+                            href="https://maps.app.goo.gl/SzNLC79ZxAnZLscq9"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="mt-4 flex items-center p-3 border border-gray-200 rounded-lg hover:border-blue-500 hover:bg-blue-50 transition-all group bg-white shadow-sm"
+                        >
+                            <div className="flex-shrink-0 h-10 w-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                            </div>
+                            <div className="ml-3">
+                                <p className="text-sm font-bold text-gray-900">Google Maps</p>
+                                <p className="text-xs text-gray-500">Klik untuk petunjuk arah</p>
+                            </div>
+                        </a>
                         <div className="mt-4">
                             <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-red-100 text-red-800">
                                 ⚠️ Unit terbatas — jangan sampai kehabisan!

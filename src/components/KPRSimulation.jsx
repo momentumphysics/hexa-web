@@ -9,8 +9,8 @@ export default function KPRSimulation() {
             dp: 'Rp 90.000.000 (10%)',
             rate: '2,75% (Fix 1 Tahun)',
             installments: [
-                { tenure: '10 Tahun', amount: 'Rp 7.726.293 / bln' },
-                { tenure: '15 Tahun', amount: 'Rp 5.496.835 / bln' },
+                { tenure: '10 Tahun', amount: 'Rp 7.726.293 / bulan' },
+                { tenure: '15 Tahun', amount: 'Rp 5.496.835 / bulan' },
             ],
             highlight: false
         },
@@ -21,11 +21,23 @@ export default function KPRSimulation() {
             dp: 'Rp 85.000.000 (10%)',
             rate: '2,75% (Fix 1 Tahun)',
             installments: [
-                { tenure: '5 Tahun', amount: 'Rp 14.351.400 / bln' },
-                { tenure: '10 Tahun', amount: 'Rp 8.032.500 / bln' },
-                { tenure: '15 Tahun', amount: 'Rp 5.951.700 / bln' },
+                { tenure: '5 Tahun', amount: 'Rp 14.351.400 / bulan' },
+                { tenure: '10 Tahun', amount: 'Rp 8.032.500 / bulan' },
+                { tenure: '15 Tahun', amount: 'Rp 5.951.700 / bulan' },
             ],
             highlight: true
+        },
+        {
+            id: 3,
+            type: 'Tipe Edelweiss',
+            price: 'Rp 1.200.000.000',
+            dp: 'Rp 120.000.000 (10%)',
+            rate: '2,75% (Fix 1 Tahun)',
+            installments: [
+                { tenure: '10 Tahun', amount: 'Rp 10.304.391 / bulan' },
+                { tenure: '15 Tahun', amount: 'Rp 7.329.113 / bulan' },
+            ],
+            highlight: false
         }
     ];
 

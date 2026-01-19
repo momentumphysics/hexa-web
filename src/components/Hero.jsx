@@ -12,18 +12,18 @@ export default function Hero() {
     };
 
     return (
-        <div id="beranda" className="relative bg-gray-900 h-screen overflow-hidden">
+        <div id="beranda" className="relative bg-gray-900 h-screen h-[100dvh] overflow-hidden">
             {/* Background Image with Overlay */}
             <div className="absolute inset-0">
                 <img
                     className="w-full h-full object-cover"
-                    src="/img/Edelweiss/Edelweiss depan.webp"
+                    src="/img/Edelweiss/1-Edelweiss depan.avif"
                     alt="Hexa Modern Living"
                 />
                 <div className="absolute inset-0 bg-gray-900/60 mix-blend-multiply" aria-hidden="true"></div>
             </div>
 
-            <div className="relative w-full h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 flex flex-col justify-center text-center sm:text-left">
+            <div className="relative w-full h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center text-center sm:text-left">
                 <h1 className="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl max-w-3xl" data-aos="fade-up">
                     <span className="block xl:inline">Hexa: Solusi Rumah</span>{' '}
                     <span className="block text-accent xl:inline">Impian Anda</span>
